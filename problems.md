@@ -21,9 +21,25 @@ You should be a function that accepts a path to one of these folders, and build 
 
 Build a `function(String pathToExample)` and returns a tree of the import dependencies. Note that some examples contain circular references! If you detect a circular reference you should raise a descriptive error.
 
+###### Run:
+```
+function("example1")
+function("example2")
+function("example3") // ERROR
+function("example4")
+function("example5")
+```
+
 ##### Problem 2: Dependencies
 
 Write a `function(String fileNameA, String fileNameB, String pathToExample)` and returns whether B is imported by A in that specified example.
+
+###### Run:
+```
+function("main", "third", "example1") // True
+function("orange", "colors",  "example4") // False
+function("colors", "yellow",  "example4") // True
+```
 
 ##### Problem 3: All Dependencies
 
