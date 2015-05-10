@@ -1,0 +1,3 @@
+import no
+
+print "OH!"

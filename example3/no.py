@@ -1,0 +1,3 @@
+import oh
+
+print "NO!"
