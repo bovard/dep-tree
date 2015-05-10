@@ -36,3 +36,8 @@ Write a `function(String fileNameA, String fileNameB, String pathToExample)` and
 ##### Problem 5: Usage
 
 Write a `funciton(String fileName, String pathToExample)` that returns the count of the number of times that fileName is imported in the specified example
+
+##### Problem 6: Print tree
+
+
+Write a `funciton(String pathToExample)` that prints out the dependency tree from top to bottom
